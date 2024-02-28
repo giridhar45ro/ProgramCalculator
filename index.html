@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-header">
+            <h2>Discount Calculator</h2>
+        </div>
+        <form id="discount-form">
+            <div class="form-group">
+                <input type="radio" name="category" id="cat-1" value="yamuna" checked="checked">
+                <label for="cat-1">Yamuna</label>
+                <input type="radio" name="category" id="cat-2" value="cat-2">
+                <label for="cat-2">Category 2</label>
+                <input type="radio" name="category" id="cat-3" value="cat-3">
+                <label for="cat-3">Category 3</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" name="program" id="prog-1" value="EOE" checked="checked">
+                <label for="prog-1">EOE</label>
+                <input type="radio" name="program" id="prog-2" value="ENG">
+                <label for="prog-2">ENG</label>
+                <input type="radio" name="program" id="prog-3" value="REGIONAL">
+                <label for="prog-3">REGIONAL</label>
+            </div>
+            <div class="form-group">
+                <input type="radio" name="status" id="status-1" value="STARTED">
+                <label for="status-1">STARTED</label>
+                <input type="radio" name="status" id="status-2" value="NOTSTARTED">
+                <label for="status-2">NOT STARTED</label>
+            </div>
+            <button type="submit" class="submit-button">Submit</button>
+            <div class="discounted-price">0</div>
+        </form>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
